@@ -42,7 +42,7 @@ watch(searchTerm, useDebounceFn(getProducts, 1000))
 </script>
 
 <template>
-<div class="w-full h-full flex flex-col gap-5 justify-center items-center">
+<div class="">
   <h1 class="text-4xl font-bold">Gift Search Bar</h1>
   <input type="text" class="p-2 border-2 border-gray-dark" v-model="searchTerm" placeholder="Start typing...">
   <Spinner v-if="loading"/>
