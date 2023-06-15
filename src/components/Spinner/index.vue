@@ -1,6 +1,12 @@
 <template>
   <!-- https://samherbert.net/svg-loaders/ -->
-  <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38" stroke="#fff">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="38"
+    height="38"
+    viewBox="0 0 38 38"
+    stroke="#fff"
+  >
     <g fill="none" fill-rule="evenodd">
       <g transform="translate(1 1)" stroke-width="2">
         <circle stroke-opacity=".5" cx="18" cy="18" r="18" />
@@ -21,6 +27,6 @@
 
 <style scoped>
 svg {
-  stroke: blue
+  stroke: blue;
 }
 </style>

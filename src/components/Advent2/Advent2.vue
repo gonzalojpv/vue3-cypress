@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref } from 'vue';
+import { ref } from 'vue'
 
 interface Joke {
   setup: string
@@ -9,22 +9,22 @@ interface Joke {
 const joke = ref<Joke>()
 const show = ref(false)
 
-async function fetchJoke () {
-  const res = await window.fetch('https://v2.jokeapi.dev/joke/christmas') 
+async function fetchJoke() {
+  const res = await window.fetch('https://v2.jokeapi.dev/joke/christmas')
   const json = await res.json()
   return json as Joke
 }
 
-async function getJoke () {
+async function getJoke() {
   const data = await fetchJoke()
   joke.value = data
 }
 
-function handleShow () {
+function handleShow() {
   show.value = true
 }
 
-function handleAnother () {
+function handleAnother() {
   joke.value = undefined
   show.value = false
   getJoke()
@@ -34,7 +34,7 @@ getJoke()
 </script>
 
 <template>
-  <div class="w-full h-full flex justify-center items-center">
+  <div class="flex h-full w-full items-center justify-center">
     <div v-if="joke">
       <div>{{ joke.setup }}</div>
       <template v-if="show">

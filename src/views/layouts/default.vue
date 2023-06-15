@@ -1,7 +1,9 @@
 <template>
   <div>
     <main id="content" role="main">
-      <div class="w-full h-full flex flex-col gap-5 justify-center items-center">
+      <div
+        class="flex h-full w-full flex-col items-center justify-center gap-5"
+      >
         <router-view />
       </div>
     </main>
