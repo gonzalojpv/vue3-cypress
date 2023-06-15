@@ -42,14 +42,19 @@ watch(searchTerm, useDebounceFn(getProducts, 1000))
 </script>
 
 <template>
-<div class="">
-  <h1 class="text-4xl font-bold">Gift Search Bar</h1>
-  <input type="text" class="p-2 border-2 border-gray-dark" v-model="searchTerm" placeholder="Start typing...">
-  <Spinner v-if="loading"/>
-  <ul v-else class="list-disc">
-    <li v-for="product in products" :key="product.id">
-      {{ product.title }} - ${{ product.price }}
-    </li>
-  </ul>
-</div>
+  <div class="">
+    <h1 class="text-4xl font-bold">Gift Search Bar</h1>
+    <input
+      type="text"
+      class="border-2 border-gray-dark p-2"
+      v-model="searchTerm"
+      placeholder="Start typing..."
+    />
+    <Spinner v-if="loading" />
+    <ul v-else class="list-disc">
+      <li v-for="product in products" :key="product.id">
+        {{ product.title }} - ${{ product.price }}
+      </li>
+    </ul>
+  </div>
 </template>
