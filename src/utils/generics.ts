@@ -31,3 +31,15 @@ export function fetchProduct(): KeyValue<string, Product> {
     value: { id: 'product id' },
   }
 }
+// generic constraints
+interface User {
+  id: string
+  name: string
+}
+
+export function print<T extends User>(t: T): T {
+  console.log('Out:', t)
+  return t
+}
+
+print({ id: 'qw', name: 'test' })
