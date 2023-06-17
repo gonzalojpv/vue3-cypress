@@ -65,7 +65,7 @@ class StateDelete<T extends ObjectId> extends State<T> {
   }
 }
 
-const stateDelete = new StateDelete()
+const stateDelete = new StateDelete<User>()
 console.log('stateDelete', stateDelete)
 class StateUser extends State<User> {
   resetPasswords() {
@@ -74,5 +74,20 @@ class StateUser extends State<User> {
 }
 
 const stateUser = new StateUser()
-
 console.log('stateUser', stateUser)
+
+// Keyof operator
+type Calendar = {
+  id: number
+  source: string
+  owner: string
+}
+
+const calendar: Calendar = { id: 1, source: 'Duckduckgo', owner: 'Me' }
+
+function getProp<T>(object: T, property: keyof T): unknown {
+  return object[property]
+}
+
+getProp<Calendar>(calendar, 'id')
+getProp<Calendar>(calendar, 'source')
