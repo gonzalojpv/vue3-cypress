@@ -45,9 +45,9 @@ watch(searchTerm, useDebounceFn(getProducts, 1000))
   <div class="">
     <h1 class="text-4xl font-bold">Gift Search Bar</h1>
     <input
+      v-model="searchTerm"
       type="text"
       class="border-2 border-gray-dark p-2"
-      v-model="searchTerm"
       placeholder="Start typing..."
     />
     <Spinner v-if="loading" />
