@@ -91,3 +91,42 @@ function getProp<T>(object: T, property: keyof T): unknown {
 
 getProp<Calendar>(calendar, 'id')
 getProp<Calendar>(calendar, 'source')
+
+// Utility types
+type Dot = {
+  x: number
+  y: number
+  desc?: string
+}
+
+type DotOptional = Partial<Dot>
+type DotRequired = Required<Dot>
+
+const keyVal: Record<string, number> = {
+  'I am a stirng': 42,
+}
+console.log('keyVal', keyVal)
+type kv = { [key: string]: number }
+
+const p: Omit<Dot, 'desc'> = {
+  x: 1,
+  y: 2,
+}
+console.log('p', p)
+const p2: Omit<Dot, 'desc' | 'y'> = {
+  x: 1,
+}
+console.log('p1', p2)
+
+const p3: Pick<Dot, 'x' | 'y'> = {
+  x: 1,
+  y: 2,
+}
+console.log('p3', p3)
+
+const readOnlyP: Readonly<Dot> = {
+  x: 3,
+  y: 3,
+  desc: 'this is a description',
+}
+console.log('readOnlyP', readOnlyP)
