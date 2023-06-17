@@ -43,3 +43,36 @@ export function print<T extends User>(t: T): T {
 }
 
 print({ id: 'qw', name: 'test' })
+
+class State<T> {
+  protected data: T[] = []
+
+  add(t: T): void {
+    this.data.push(t)
+  }
+
+  getState(): T[] {
+    return this.data
+  }
+}
+
+type ObjectId = {
+  id: string
+}
+class StateDelete<T extends ObjectId> extends State<T> {
+  remove(id: string) {
+    this.data = this.data.filter((x) => x.id !== id)
+  }
+}
+
+const stateDelete = new StateDelete()
+console.log('stateDelete', stateDelete)
+class StateUser extends State<User> {
+  resetPasswords() {
+    // logic
+  }
+}
+
+const stateUser = new StateUser()
+
+console.log('stateUser', stateUser)
