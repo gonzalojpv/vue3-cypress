@@ -1,0 +1,1 @@
+<template>decorator.vue</template>
