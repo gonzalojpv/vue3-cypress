@@ -6,6 +6,7 @@
     "module": "ESNext",
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
     "skipLibCheck": true,
+    "experimentalDecorators": true,                   /* Enable experimental support for TC39 stage 2 draft decorators. */
 
     /* Bundler mode */
     "moduleResolution": "bundler",
