@@ -16,6 +16,10 @@ module.exports = {
   parserOptions: {
     parser: '@typescript-eslint/parser',
     sourceType: 'module',
+    ecmaVersion: 2020,
+    ecmaFeatures: {
+      jsx: true,
+    },
   },
   // plugins: ['@typescript-eslint'], // might not be needed
   rules: {
@@ -43,6 +47,8 @@ module.exports = {
           'view',
           'generics',
           'generic',
+          'Alt',
+          'Advent4',
         ],
       },
     ],
