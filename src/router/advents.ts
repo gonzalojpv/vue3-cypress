@@ -41,7 +41,7 @@ const adventChildRoutes = (prop: string, mode = false) => [
   },
   {
     path: 'advent-8',
-    name: `${prop}.eight`,
+    name: `${prop}.eighth`,
     meta: {
       authRequired: mode,
     },
