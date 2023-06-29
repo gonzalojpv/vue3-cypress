@@ -2,7 +2,7 @@
 import { ref, computed, watchEffect } from 'vue'
 import { useI18n } from 'vue-i18n'
 
-const christmasDate = new Date('2022/12/25')
+const christmasDate = new Date('2023/12/25')
 
 const count = Math.ceil((+christmasDate - +new Date()) / (1000 * 60 * 60 * 24))
 
@@ -10,6 +10,7 @@ const locales = [
   { key: 'en', flag: '🇺🇸' },
   { key: 'ja-JP', flag: '🇯🇵' },
   { key: 'de', flag: '🇩🇪' },
+  { key: 'es', flag: '🇲🇽' },
 ]
 
 const { t, locale, d } = useI18n()
