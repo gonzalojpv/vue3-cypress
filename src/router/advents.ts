@@ -47,6 +47,14 @@ const adventChildRoutes = (prop: string, mode = false) => [
     },
     component: () => import('../views/pages/advents/advent-8.vue'),
   },
+  {
+    path: 'advent-9',
+    name: `${prop}.nine`,
+    meta: {
+      authRequired: mode,
+    },
+    component: () => import('../views/pages/advents/advent-9.vue'),
+  },
 ]
 
 export default adventChildRoutes
