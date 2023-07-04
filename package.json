@@ -12,22 +12,33 @@
     "lint": "eslint --ext .js,.ts,.vue --ignore-path .gitignore --fix src/",
     "lint:check": "eslint --ext .js,.ts,.vue --ignore-path .gitignore src/",
     "lint:style": "stylelint ./src/**/*.{css,vue} --fix",
-    "lint:style:check": "stylelint ./src/**/*.{css,vue}"
+    "lint:style:check": "stylelint ./src/**/*.{css,vue}",
+    "cypress:open": "cypress open"
   },
   "dependencies": {
     "@vitejs/plugin-vue-jsx": "^3.0.1",
     "@vueuse/core": "^10.1.2",
     "vue": "^3.2.47",
-    "vue-router": "4",
-    "vue-i18n": "9.2.2"
+    "vue-i18n": "9.2.2",
+    "vue-router": "4"
   },
   "devDependencies": {
+    "@iconify-json/carbon": "^1.1.11",
+    "@iconify-json/logos": "^1.1.19",
+    "@iconify-json/mdi": "^1.1.36",
+    "@iconify-json/twemoji": "^1.1.7",
+    "@intlify/unplugin-vue-i18n": "0.8.0",
+    "@intlify/vite-plugin-vue-i18n": "^6.0.3",
     "@types/node": "^20.3.1",
     "@typescript-eslint/eslint-plugin": "^5.59.11",
     "@typescript-eslint/parser": "^5.59.11",
+    "@unocss/preset-icons": "0.47.5",
+    "@unocss/preset-wind": "^0.47.5",
+    "@unocss/reset": "^0.47.5",
+    "@unocss/transformer-directives": "^0.47.5",
     "@vitejs/plugin-vue": "^4.1.0",
     "autoprefixer": "^10.4.13",
-    "cypress": "^12.13.0",
+    "cypress": "^12.16.0",
     "eslint": "^8.42.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-prettier": "^4.2.1",
@@ -42,19 +53,9 @@
     "stylelint-config-standard": "^33.0.0",
     "tailwindcss": "^3.3.2",
     "typescript": "^5.0.4",
+    "unocss": "0.47.5",
     "vite": "^4.3.9",
     "vue-eslint-parser": "^9.3.1",
-    "@iconify-json/carbon": "^1.1.11",
-    "@iconify-json/logos": "^1.1.19",
-    "@iconify-json/mdi": "^1.1.36",
-    "@iconify-json/twemoji": "^1.1.7",
-    "@intlify/unplugin-vue-i18n": "0.8.0",
-    "@intlify/vite-plugin-vue-i18n": "^6.0.3",
-    "@unocss/preset-icons": "0.47.5",
-    "@unocss/preset-wind": "^0.47.5",
-    "@unocss/reset": "^0.47.5",
-    "@unocss/transformer-directives": "^0.47.5",
-    "unocss": "0.47.5",
     "vue-tsc": "^1.4.2"
   }
 }
