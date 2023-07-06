@@ -49,6 +49,7 @@ module.exports = {
           'generic',
           'Alt',
           'Advent4',
+          'Nav',
         ],
       },
     ],

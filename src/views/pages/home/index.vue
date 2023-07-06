@@ -10,7 +10,7 @@
               Fetching and Debounce in Vue (Advent of Vue #1)
             </p>
             <p
-              class="text-green-700 bg-green-50 ring-green-600/20 mt-0.5 whitespace-nowrap rounded-md px-1.5 py-0.5 text-xs font-medium ring-1 ring-inset"
+              class="mt-0.5 whitespace-nowrap rounded-md bg-gray-50 px-1.5 py-0.5 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10"
             >
               Completed
             </p>
@@ -91,7 +91,7 @@
               TypeScript- Decorators
             </p>
             <p
-              class="mt-0.5 whitespace-nowrap rounded-md bg-gray-50 px-1.5 py-0.5 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10"
+              class="text-green-700 bg-green-50 ring-green-600/20 mt-0.5 whitespace-nowrap rounded-md px-1.5 py-0.5 text-xs font-medium ring-1 ring-inset"
             >
               In progress
             </p>
@@ -118,9 +118,9 @@
               For Loops? Recursion? (Advent of Vue #4)
             </p>
             <p
-              class="text-green-700 bg-green-50 ring-green-600/20 mt-0.5 whitespace-nowrap rounded-md px-1.5 py-0.5 text-xs font-medium ring-1 ring-inset"
+              class="mt-0.5 whitespace-nowrap rounded-md bg-gray-50 px-1.5 py-0.5 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10"
             >
-              progress
+              Completed
             </p>
           </div>
           <div
@@ -189,6 +189,33 @@
             class="hidden rounded-md bg-white px-2.5 py-1.5 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 sm:block"
           >
             View project<span class="sr-only">, Advent of Vue #8</span>
+          </router-link>
+        </div>
+      </li>
+      <li class="flex items-center justify-between gap-x-6 py-5">
+        <div class="min-w-0">
+          <div class="flex items-start gap-x-3">
+            <p class="text-sm font-semibold leading-6 text-gray-900">
+              Design Patterns for Vue 3
+            </p>
+            <p
+              class="text-green-700 bg-green-50 ring-green-600/20 mt-0.5 whitespace-nowrap rounded-md px-1.5 py-0.5 text-xs font-medium ring-1 ring-inset"
+            >
+              progress
+            </p>
+          </div>
+          <div
+            class="mt-1 flex items-center gap-x-2 text-xs leading-5 text-gray-500"
+          >
+            <p class="truncate">Created by Gonzalo</p>
+          </div>
+        </div>
+        <div class="flex flex-none items-center gap-x-4">
+          <router-link
+            :to="{ name: 'design-patterns.index' }"
+            class="hidden rounded-md bg-white px-2.5 py-1.5 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 sm:block"
+          >
+            View project<span class="sr-only">, Design Patterns for Vue</span>
           </router-link>
         </div>
       </li>
