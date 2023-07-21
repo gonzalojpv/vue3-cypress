@@ -18,6 +18,7 @@
   "dependencies": {
     "@vitejs/plugin-vue-jsx": "^3.0.1",
     "@vueuse/core": "^10.1.2",
+    "sass": "^1.63.6",
     "vue": "^3.2.47",
     "vue-i18n": "9.2.2",
     "vue-router": "4"
@@ -29,6 +30,7 @@
     "@iconify-json/twemoji": "^1.1.7",
     "@intlify/unplugin-vue-i18n": "0.8.0",
     "@intlify/vite-plugin-vue-i18n": "^6.0.3",
+    "@tailwindcss/forms": "^0.5.4",
     "@types/node": "^20.3.1",
     "@typescript-eslint/eslint-plugin": "^5.59.11",
     "@typescript-eslint/parser": "^5.59.11",

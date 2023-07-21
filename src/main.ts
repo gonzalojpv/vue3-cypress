@@ -5,6 +5,7 @@ import App from './App.vue'
 import router from './router'
 import './base.css'
 import 'uno.css'
+import '@/assets/scss/app.scss'
 
 /*
  * All i18n resources specified in the plugin `include` option can be loaded
