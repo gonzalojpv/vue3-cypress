@@ -16,11 +16,12 @@
     "cypress:open": "cypress open"
   },
   "dependencies": {
-    "@vitejs/plugin-vue-jsx": "^3.0.1",
+    "@vitejs/plugin-vue-jsx": "^4.1.1",
     "@vueuse/core": "^10.1.2",
-    "vue": "^3.2.47",
-    "vue-i18n": "9.2.2",
-    "vue-router": "4"
+    "pinia": "^2.3.0",
+    "vue": "^3.5.13",
+    "vue-i18n": "10.0.5",
+    "vue-router": "^4.5.0"
   },
   "devDependencies": {
     "@iconify-json/carbon": "^1.1.11",
@@ -38,7 +39,7 @@
     "@unocss/transformer-directives": "^0.47.5",
     "@vitejs/plugin-vue": "^4.1.0",
     "autoprefixer": "^10.4.13",
-    "cypress": "^12.16.0",
+    "cypress": "^13.16.1",
     "eslint": "^8.42.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-prettier": "^4.2.1",
@@ -52,9 +53,9 @@
     "stylelint-config-recommended-vue": "^1.4.0",
     "stylelint-config-standard": "^33.0.0",
     "tailwindcss": "^3.3.2",
-    "typescript": "^5.0.4",
+    "typescript": "^5.5.3",
     "unocss": "0.47.5",
-    "vite": "^4.3.9",
+    "vite": "^6.0.3",
     "vue-eslint-parser": "^9.3.1",
     "vue-tsc": "^1.4.2"
   }
