@@ -44,6 +44,7 @@ watch(searchTerm, useDebounceFn(getProducts, 1000))
 <template>
   <div class="">
     <h1 class="text-4xl font-bold">Gift Search Bar</h1>
+    <small class="block">{{ products.length }}</small>
     <input
       v-model="searchTerm"
       type="text"
